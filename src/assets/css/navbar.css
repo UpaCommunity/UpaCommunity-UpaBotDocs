@@ -1,0 +1,151 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    height: auto;
+    width: 78px;
+    background: rgba(1, 1, 1, 0.065);
+
+    border-right: solid 2px var(--color_secondary);
+    box-shadow: 0 5px 10px var(--color_shadow);
+
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar.open {
+    width: 300px;
+}
+
+.sidebar.open .sidebar__top{
+    display: flex;
+}
+
+.sidebar.open .sidebar__top .top__text {
+    width: 75%;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--colorText_title);
+
+    text-align: center;
+}
+
+.sidebar.open .sidebar__top .top__logo {
+    width: 15%;
+}
+
+.sidebar.open .sidebar__top .top__logo .logo__img {
+    width: 100%;
+}
+
+.sidebar.open .sidebar__top .top__button {
+    width: 10%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--colorText_secondary);
+    
+    padding-top: 10px;
+}
+
+.sidebar.open .sidebar__subtop {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.sidebar.open .sidebar__subtop .subtop__item {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+    border: solid 3px var(--color_primary);
+    border-radius: 5px;
+
+    width: 100%;
+    padding: 5px;
+}
+
+.sidebar.open .sidebar__subtop .subtop__item .subtop__item_name {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--colorText_info);
+}
+
+.sidebar.open .sidebar__subtop .subtop__item .subtop__item_value {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: var(--colorText_info)
+}
+
+.sidebar.open .sidebar__body {
+    margin-top: 20px;
+}
+
+.sidebar.open .sidebar__body .body__docs {
+    width: 100%;
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item {
+    padding: 5px;
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item .docs__item_name {
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    color: var(--colorNav_item);
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item .docs__item_name:hover {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item .docs__item_subs {
+    display: none;
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item .docs__item_subs.inUse {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    font-weight: 500;
+}
+
+.sidebar.open .sidebar__body .body__docs .docs__item .docs__item_subs .docs__item_subItem {
+    font-size: 13px;
+    color: var(--colorNav_Subitem);
+}
+
+.web__root{
+    position: relative;
+    max-width: 1700px;
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+
+    background: var(--color_background);
+}
+
+.sidebar.open ~ .web__root{
+    left: 300px;
+    width: calc(100% - 300px);
+}

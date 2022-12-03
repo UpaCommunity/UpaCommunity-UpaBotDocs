@@ -1,0 +1,186 @@
+.web__root {
+    background: var(--color_background);
+    display: block;
+}
+
+.web__root .root__router {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
+    margin-top: 30px;
+}
+
+.root__router .router__name {
+    font-size: 30px;
+    font-weight: 900;
+
+    color: var(--colorText_title);
+}
+
+.root__router .router__root .root__name {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
+    font-size: 25px;
+    font-weight: 900;
+
+    color: var(--colorText_subtitle);
+}
+
+.root__router .router__buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.root__router .router__buttons .buttons__prev {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px var(--color_util);
+    box-shadow: 0 5px 10px var(--color_shadow);
+    border-radius: 10px;
+
+    padding: 15px;
+    display: flex;
+}
+
+.root__router .router__buttons .buttons__prev .button__icon {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+
+    color: rgba(134, 136, 23, 0.616);
+}
+
+.root__router .router__buttons .buttons__prev .button__content {
+    width: 80%;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.root__router .router__buttons .buttons__prev .button__content .content__name {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.root__router .router__buttons .buttons__prev .button__content .content__message {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.root__router .router__buttons .buttons__next {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px var(--color_util);
+    box-shadow: 0 5px 10px var(--color_shadow);
+    border-radius: 10px;
+
+    padding: 15px;
+    display: flex;
+}
+
+.root__router .router__buttons .buttons__next .button__icon {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 70px;
+
+    color: rgba(134, 136, 23, 0.616);
+}
+
+.root__router .router__buttons .buttons__next .button__content {
+    width: 80%;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.root__router .router__buttons .buttons__next .button__content .content__name {
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.root__router .router__buttons .buttons__next .button__content .content__message {
+    text-align: right;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* ROOT PAGE */
+
+.root__router .router__root .root__page {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 95%;
+}
+
+.root__page .page__content .content__section {
+    width: 100%;
+}
+
+.root__page .page__content .content__section .section__subtitle {
+    font-size: 23px;
+    color: var(--colorText_subtitle);
+}
+
+.root__page .page__content .content__section .section__text {
+    font-size: 16px;
+    color: var(--colorText_text);
+}
+
+.root__page .page__content .content__section .section__links {
+    font-size: 16px;
+    display: block;
+}
+
+.section__links .links_item {
+    color: var(--colorText_text);
+}
+
+.root__page .page__content .content__section .section__image {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section__image img.image__img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.root__page .page__content .content__section .section__imageTwo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
+
+.section__imageTwo img.image__img {
+    width: 49%;
+}
+
+.root__page .page__content .content__section .section__table {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span.info {
+    color: var(--colorText_info);
+}

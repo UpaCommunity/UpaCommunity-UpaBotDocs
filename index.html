@@ -1,0 +1,77 @@
+<head>
+    <title>UpaCommunity - Upa Bot Docs</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer="defer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" defer="defer"/></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="icon" href="src/assets/images/UpaLogo.ico">
+
+    <link rel="stylesheet" href="src/assets/css/navbar.css">
+    <link rel="stylesheet" href="src/assets/css/variables.css">
+    <link rel="stylesheet" href="src/assets/css/routes.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="sidebar open">
+        <div class="sidebar__top">
+            <div class="top__logo">
+                <img src="src/assets/images/UpaLogo.png" alt="UpaCommunity_Logo" class="logo__img">
+            </div>
+            <div class="top__text">Upa! Bot</div>
+            <div class="top__button"><i class='bx bx-list-ul'></i></div>
+        </div>
+        <div class="sidebar__subtop">
+            <div class="subtop__item">
+                <div class="subtop__item_name">Versión</div>
+                <div class="subtop__item_value">v1.0B</div>
+            </div>
+        </div>
+        <div class="sidebar__body">
+            <div class="body__docs" id="body__docs">
+                <div class="docs__item">
+                    <div class="docs__item_name" onclick="docsSubs(0)">* Incio</div>
+                    <div class="docs__item_subs" id="docsSubs_0">
+                        <div class="docs__item_subItem" onclick="window.location='#/es/inicial/bienvenida'"><i class='bx bx-chevrons-right'></i> Bienvenida</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="web__root">
+        <div class="root__router">
+            <div class="router__name" id="router__name"><i class='bx bxs-chevrons-right'></i> </div>
+            <div class="router__root">
+                <div class="root__name" id="root__name"><i class='bx bxs-chevron-right'></i> </div>
+                <div class="root__page" id="root__page">
+                    
+                </div>
+            </div>
+            <div class="router__buttons">
+                <a class="buttons__prev" id="buttons__prev" href="#">
+                    <div class="button__icon"><i class='bx bxs-arrow-to-left'></i></div>
+                    <div class="button__content">
+                        <div class="content__name" id="content__namePrev"></div>
+                        <div class="content__message" id="content__messagePrev">Vuelve hacia la anterior pagina.</div>
+                    </div>
+                </a>
+                <a class="buttons__next" id="buttons__next" href="#">
+                    <div class="button__content">
+                        <div class="content__name" id="content__nameNext"></div>
+                        <div class="content__message" id="content__messageNext">Avanza hacia la siguiente pagina.</div>
+                    </div>
+                    <div class="button__icon"><i class='bx bxs-arrow-to-right'></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,26 @@
+* {
+    font-family: monospace;
+    user-select: none;
+}
+
+:root {
+    --color_background: rgba(54, 57, 63, 1);
+    --color_shadow: rgba(25, 26, 29, 1);
+
+    --color_primary: rgba(107, 104, 65, 1);
+    --color_secondary: rgba(54, 54, 63, 1);
+    --color_util: rgba(255, 255, 0, 0.336);
+
+    --colorText_title: rgba(255, 255, 255, 1); /* Ok */
+    --colorText_subtitle: rgba(255, 255, 255, 0.61); /* Ok */
+    --colorText_text: rgba(255, 255, 255, 0.521); /* Ok */
+    --colorText_info: rgba(255, 236, 128, 0.322); /* Ok */
+    --colorText_secondary: rgba(255, 255, 255, 1); /* ¿Ok? */
+    
+    --colorNav_item: rgba(255, 255, 255, 0.719);
+    --colorNav_Subitem: rgba(255, 255, 255, 0.623);
+}
+
+body {
+    background: var(--color_background);
+}

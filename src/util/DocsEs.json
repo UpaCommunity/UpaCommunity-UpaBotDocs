@@ -1,0 +1,103 @@
+[
+    {
+        "docsId": "0",
+        "docsName": "Inicial",
+        "docsShow": false,
+        "docsRoutes": [
+            {
+                "routeId": "1",
+                "routeName": "Bienvenida",
+                "routeUrl": "/es/inicial/bienvenida",
+
+                "routeUrlPrev": "false",
+                "routeNamePrev": "No existe nada antes de esto.",
+                "routeUrlNext": "/es/primeros-pasos/invitemos-a-upa",
+                "routeNameNext": "1.1- Inicial: Invitemos a Upa"
+            }
+        ]
+    },
+    {
+        "docsId": "1",
+        "docsName": "Primeros pasos",
+        "docsShow": true,
+        "docsRoutes": [
+            {
+                "routeId": "1",
+                "routeName": "Invitemos a Upa",
+                "routeUrl": "/es/primeros-pasos/invitemos-a-upa",
+
+                "routeUrlPrev": "/es/inicial/bienvenida",
+                "routeNamePrev": "0- Inicial: Bienvenida",
+                "routeUrlNext": "/es/primeros-pasos/permisos",
+                "routeNameNext": "1.2- Permisos"
+            },
+            {
+                "routeId": "2",
+                "routeName": "Permisos",
+                "routeUrl": "/es/primeros-pasos/permisos",
+
+                "routeUrlPrev": "/es/primeros-pasos/invitemos-a-upa",
+                "routeNamePrev": "1.1- Inicial: Invitemos a Upa",
+                "routeUrlNext": "/es/modulos/informacion",
+                "routeNameNext": "2.1- Modulos: Información"
+            }
+        ]
+    },
+    {
+        "docsId": "2",
+        "docsName": "Modulos",
+        "docsShow": true,
+        "docsRoutes": [
+            {
+                "routeId": "1",
+                "routeName": "Información",
+                "routeUrl": "/es/modulos/informacion",
+
+                "routeUrlPrev": "/es/primeros-pasos/permisos",
+                "routeNamePrev": "1.2- Primeros pasos: Permisos",
+                "routeUrlNext": "/es/modulos/entertainment",
+                "routeNameNext": "2.2- Modulos: Entretencion"
+            },
+            {
+                "routeId": "2",
+                "routeName": "Entertainment",
+                "routeUrl": "/es/modulos/entertainment",
+
+                "routeUrlPrev": "/es/modulos/informacion",
+                "routeNamePrev": "2.1- Modulos: Información",
+                "routeUrlNext": "/es/modulos/welcomer",
+                "routeNameNext": "2.3- Modulos: Welcomer"
+            },
+            {
+                "routeId": "3",
+                "routeName": "Welcomer",
+                "routeUrl": "/es/modulos/welcomer",
+
+                "routeUrlPrev": "/es/modulos/entertainment",
+                "routeNamePrev": "2.2- Modulos: Entertaiment",
+                "routeUrlNext": "/es/modulos/serverlogs",
+                "routeNameNext": "2.4- Modulos: ServerLogs"
+            },
+            {
+                "routeId": "4",
+                "routeName": "ServerLogs",
+                "routeUrl": "/es/modulos/serverlogs",
+
+                "routeUrlPrev": "/es/modulos/welcomer",
+                "routeNamePrev": "2.3- Modulos: Welcomer",
+                "routeUrlNext": "/es/modulos/messages",
+                "routeNameNext": "2.5- Modulos: Messages"
+            },
+            {
+                "routeId": "5",
+                "routeName": "Messages",
+                "routeUrl": "/es/modulos/messages",
+
+                "routeUrlPrev": "/es/modulos/serverlogs",
+                "routeNamePrev": "2.4- Modulos: ServerLogs",
+                "routeUrlNext": "false",
+                "routeNameNext": ""
+            }
+        ]
+    }
+]
